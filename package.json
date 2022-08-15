@@ -1,0 +1,39 @@
+{
+  "name": "@zignartech/wasmclient-vl-front",
+  "description": "WasmClient, client interface library for ISCP Wasm VM",
+  "version": "1.0.4",
+  "author": "Eric Hop",
+  "peerDependencies": {
+    "base64-js": "^1.5.1",
+    "blakejs": "^1.1.1",
+    "tweetnacl": "^1.0.3",
+    "ieee754": "^1.2.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "rollup": "^2.68.0",
+    "rollup-plugin-empty": "^1.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-ts": "^2.0.5",
+    "typescript": "^4.5.5"
+  },
+  "type": "module",
+  "types": "./wasmclient.d.ts",
+  "main": "dist/wasmclient.js",
+  "browser": "dist/wasmclient.js",
+  "scripts": {
+    "build:dev": "rollup -c rollup.config.js",
+    "build:prod": "rollup -c rollup.config.js --environment NODE_ENV:production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zignartech/wasmclient-vl"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zignartech/wasmclient-vl/issues"
+  },
+  "homepage": "https://github.com/zignartech/wasmclient-vl#readme"
+}
